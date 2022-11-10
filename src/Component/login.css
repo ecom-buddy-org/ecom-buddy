@@ -1,0 +1,107 @@
+.mainsection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.top-image{
+    font-family: 'Neuton',serif;
+    padding: none;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+   text-align: center;
+    color: #003873;
+ 
+}
+.loginheading{
+    font-family: 'Neuton',serif;
+    font-size: 40px;
+    font: bold;
+    font-weight: 400;
+  text-align: center;
+    color: #003873;
+    margin: 24px auto 28px;
+    
+}
+
+.input1 {
+    height: auto;
+    line-height: 1.375;
+    letter-spacing: .46px;
+    padding: 14px 11px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.text{
+    color:rgb(109, 109, 109) ;
+    font-weight:600;
+    font-size: large;
+    margin-top: 15px;
+    
+}
+.forgot{
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    font-weight:500;
+    margin-top: 10px;
+}
+.loginemail{
+    display: flex;
+    flex-direction: column;
+    
+}
+.loginpassword{
+    display: flex;
+    flex-direction: column;
+}
+.form-check-label{
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: 0.5px;
+}
+.btn-primary{
+    width: 400px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.bottom-para{
+    
+    font-size: 15px; 
+    color: rgba(24, 27, 31, 0.64);
+    letter-spacing: 0.25px;
+}
+.bottom-link{
+    text-decoration: none;
+}
+
+@media(max-width:450px) {
+    .loginform{
+        min-width:fit-content;
+        padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .input
+    {
+        width: 300px;
+    }
+    .btn-primary{
+        width: 300px;
+    }
+    .bottom-para{
+        width: 300px;
+        text-align: center;
+    }
+}
