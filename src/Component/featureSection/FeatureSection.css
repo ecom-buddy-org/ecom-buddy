@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 120px;
+  padding: 0px 40px;
   margin-bottom: 50px;
 }
 
@@ -17,6 +17,7 @@
 
 .mobile-sec-text {
   color: var(--primary-color-2);
+  margin-right: 100px;
   flex: 1;
 }
 
@@ -44,10 +45,33 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1100px) {
+  .mobile-section {
+    padding: 0px 40px;
+    gap: 20px;
+  }
+
+  .mobile-sec-text span {
+    font-size: 26px;
+  }
+
+  .mobile-sec-text p {
+    font-size: 18px;
+  }
+
+  .mobile-sec-text p.explore_link {
+    font-size: 16px;
+  }
+
+  .mobile-section img {
+    width: 300px;
+  }
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .mobile-section {
-    padding: 0px 50px;
-    gap: 20px;
     flex-direction: column;
   }
 
@@ -55,20 +79,17 @@
     flex: 1;
   }
 
-  .mobile-sec-img img {
-    width: 260px;
-  }
-
   .mobile-sec-img-2 {
     flex: 1;
   }
 
-  .mobile-sec-img-2 img {
-    width: 260px;
+  .mobile-section img {
+    width: 340px;
   }
 
   .mobile-sec-text {
     text-align: center;
+    margin-right: 0px;
   }
 
   .mobile-sec-text .grad-text {
@@ -76,10 +97,10 @@
   }
 
   .mobile-sec-text span {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .mobile-sec-text p {
-    font-size: 12px;
+    font-size: 18px;
   }
 }

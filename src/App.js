@@ -1,15 +1,15 @@
 import React from 'react'
-import Login from './Component/Login'
-import Signup from './Component/Signup'
-import Homepage from './Component/Homepage'
-import Dashboard from './Component/Dashboard'
+import Login from './pages/authentication/Login/Login'
+import Signup from './pages/authentication/Signup/Signup'
+import Homepage from './pages/landing_page/Homepage'
+import Dashboard from './pages/dashboard/Dashboard'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <Homepage />,
     <Login />,
     <Signup />,
-    <Dashboard/>,
+    <Dashboard />,
     <BrowserRouter>
       <Routes>
         <Route>

@@ -1,8 +1,9 @@
 import React from 'react'
 import "./homepagestyle.css"
-import Navbar from "./navbar/Navbar";
-import FeatureSection from ".././Component/featureSection/FeatureSection";
-import Img1 from './Images/Home_title_image.jpeg'
+import Navbar from "../../Component/navbar/Navbar";
+import FeatureSection from "../../Component/featureSection/FeatureSection";
+import Img1 from '../../Images/Home_title_image.jpeg'
+
 function Homepage() {
   return (
     <>
@@ -42,7 +43,8 @@ function Homepage() {
         </div>
       </div>
       <div className="section_title">
-        <h2 id="content1">Everything for Your Business on Amazon <br /> One of the Industry's First All-In-One Software for Amazon</h2>
+        <h2>Everything for Your Business on Amazon</h2>
+        <p>One of the Industry's First All-In-One Software for Amazon</p>
       </div>
       <FeatureSection />
     </>

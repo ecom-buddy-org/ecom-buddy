@@ -3,7 +3,7 @@ import "./Navbar.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Logo from '../Images/Logo.jpg'
+import Logo from '../../Images/Logo.jpg'
 import { useNavigate } from "react-router-dom";
 
 function ElevationScroll(props) {
@@ -44,7 +44,7 @@ const Navbar = (props) => {
               <div className="navbar">
                 <div className="logo-links-container">
                   <div className="logo">
-                    <img src={Logo} alt="logo" style={{ width: "120px" }} />
+                    <img src={Logo} alt="logo" className="navbar-logo" />
                   </div>
                   <div className="desktop-navbar-links">
                     <ul>

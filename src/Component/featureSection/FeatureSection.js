@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeatureSection.css";
-import Section2_Ecombuddy from '../Images/Section2_Ecombuddy.png'
-import LandingSection3 from '../Images/landing_section_3.svg'
+import Section2_Ecombuddy from '../../Images/Section2_Ecombuddy.png'
+import LandingSection3 from '../../Images/landing_section_3.svg'
 
 const MobileSection = () => {
   return (
@@ -23,7 +23,7 @@ const MobileSection = () => {
         </div>
       </div>
       <div className="mobile-section">
-        <div className="mobile-sec-text" style={{ marginRight: "100px" }}>
+        <div className="mobile-sec-text">
           <span className="grad-text">Find Thousands of Keywords in Seconds</span>
           <br />
           <br />
