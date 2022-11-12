@@ -1,4 +1,13 @@
-.main-section {
+body {
+    font-family: 'Nunito Sans', 'Source Sans Pro', sans-serif;
+
+}
+
+p {
+    margin: 0;
+}
+
+.main_section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,23 +15,33 @@
 
 .section1 {
     width: 30%;
-    margin: 60px;
     margin-right: 20px;
     margin-top: 20px;
+}
+
+.top_image {
+    text-align: center;
+}
+
+.top_image img {
+    height: 70px;
 }
 
 .section2 {
     box-shadow: 0 3px 10px rgb(72 94 117 / 15%);
     border-radius: 8px;
     width: 35%;
-    margin: 60px;
+    padding: 2px 3px;
     margin-left: 60px;
     margin-top: 20px;
-
 }
 
-.main-form {
+.main_form {
     align-content: center;
+}
+
+.main_form div {
+    margin-bottom: 1rem;
 }
 
 .mainsection {
@@ -39,18 +58,15 @@
     align-items: center;
 }
 
-.top-image {
-    text-align: center;
-}
-
 .loginheading {
     font-family: 'Neuton', serif;
     font-size: 40px;
-    font-weight: 400px;
-    padding-left: 30px;
-    color: #003873;
-    margin: 24px auto 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-align: center;
+    color: var(--primary-color-2);
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .input {
@@ -60,16 +76,20 @@
     padding: 14px 11px;
     font-size: 16px;
     font-weight: 400;
-    width: 400px;
-    flex-wrap: wrap;
+    border-radius: 3px;
+    border-color: #8c8c8c;
+    border: 1px solid #ced4da;
+    background-clip: padding-box;
+    color: #495057;
 }
 
 .text {
-    color: rgb(109, 109, 109);
-    font-weight: 600;
-    font-size: large;
-    margin-top: 15px;
-
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 1.375;
+    color: #646464;
+    margin-bottom: 8px;
 }
 
 .forgot {
@@ -97,41 +117,61 @@
 }
 
 .list {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     color: #6a6c6f;
-    ;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+    font-size: 12px;
 }
 
-.form-check-label {
+.form_check_label {
     font-family: 'Didact Gothic', sans-serif;
     letter-spacing: 0.5px;
     font-size: 15px;
 }
 
-.btn-primary {
-    width: 400px;
-    height: 40px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.form_check_label a {
+    color: var(--primary-color-1);
+    font-weight: bold;
 }
 
-.bottom-para {
+.btn_primary {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: var(--primary-color-2);
+    background-color: var(--primary-color-2);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bottom_para {
     font-size: 15px;
     color: rgba(24, 27, 31, 0.64);
     letter-spacing: 0.25px;
     text-align: center;
 }
 
-.bottom-link {
+.bottom_link {
     text-decoration: none;
+    color: var(--primary-color-2);
+    font-weight: bold;
 }
 
-.section2-imagediv {
+.section2_imagediv {
     width: 100%;
 }
 
-#section2-image {
+.section2_image {
     background-size: cover;
     width: 80%;
     height: 200px;
@@ -139,25 +179,17 @@
     margin-top: 25px;
 }
 
-.main-para {
+.main_para {
     margin: 40px;
 }
 
-.section2-para {
-    font-size: 18px;
-    font-weight: bolder;
-    font-size: x-large;
-}
-
-.section2-para1 {
+.section2_para {
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-    font-size: larger;
-}
-
-.section2-para2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.44;
+    color: var(--primary-color-2);
+    margin: 0 0 16px;
 }
 
 
@@ -184,12 +216,12 @@
 
     }
 
-    .btn-primary {
+    .btn_primary {
         width: 450px;
 
     }
 
-    .bottom-para {
+    .bottom_para {
         width: 300px;
         text-align: center;
     }
@@ -206,12 +238,12 @@
         align-items: center;
     }
 
-    .btn-primary {
+    .btn_primary {
         width: 300px;
         text-align: center;
     }
 
-    .bottom-para {
+    .bottom_para {
         text-align: center;
     }
 }

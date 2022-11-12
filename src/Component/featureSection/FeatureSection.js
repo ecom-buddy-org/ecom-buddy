@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeatureSection.css";
-import Section2_Ecombuddy from '../Images/Section2_Ecombuddy.png'
-import LandingSection3 from '../Images/landing_section_3.svg'
+import Section2_Ecombuddy from '../../Images/Section2_Ecombuddy.png'
+import LandingSection3 from '../../Images/landing_section_3.svg'
 
 const MobileSection = () => {
   return (

@@ -10,4 +10,12 @@
 
 body {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.375;
+    color: var(--metal);
+    margin: 0;
+    padding: 0;
+    background: #fff;
 }

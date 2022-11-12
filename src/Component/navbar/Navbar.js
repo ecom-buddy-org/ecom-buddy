@@ -3,7 +3,7 @@ import "./Navbar.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Logo from '../Images/Logo.jpg'
+import Logo from '../../Images/Logo.jpg'
 import { useNavigate } from "react-router-dom";
 
 function ElevationScroll(props) {

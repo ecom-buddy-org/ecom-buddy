@@ -1,8 +1,9 @@
 import React from 'react'
 import "./homepagestyle.css"
-import Navbar from "./navbar/Navbar";
-import FeatureSection from ".././Component/featureSection/FeatureSection";
-import Img1 from './Images/Home_title_image.jpeg'
+import Navbar from "../../Component/navbar/Navbar";
+import FeatureSection from "../../Component/featureSection/FeatureSection";
+import Img1 from '../../Images/Home_title_image.jpeg'
+
 function Homepage() {
   return (
     <>
