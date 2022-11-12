@@ -23,7 +23,7 @@ const MobileSection = () => {
         </div>
       </div>
       <div className="mobile-section">
-        <div className="mobile-sec-text" style={{ marginRight: "100px" }}>
+        <div className="mobile-sec-text">
           <span className="grad-text">Find Thousands of Keywords in Seconds</span>
           <br />
           <br />

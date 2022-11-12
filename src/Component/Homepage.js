@@ -42,7 +42,8 @@ function Homepage() {
         </div>
       </div>
       <div className="section_title">
-        <h2 id="content1">Everything for Your Business on Amazon <br /> One of the Industry's First All-In-One Software for Amazon</h2>
+        <h2>Everything for Your Business on Amazon</h2>
+        <p>One of the Industry's First All-In-One Software for Amazon</p>
       </div>
       <FeatureSection />
     </>

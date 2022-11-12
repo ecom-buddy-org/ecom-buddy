@@ -4,6 +4,10 @@
     --primary-color-2-light: #29c0d7;
     --primary-color-2-light-2: #faf1e6;
     --dark-gray: #3e4e61;
-    --metal: #646464;
+    --metal: #343a40;
     --metal-light: #dcdee7;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
 }

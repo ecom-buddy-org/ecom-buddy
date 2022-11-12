@@ -1,11 +1,19 @@
+.navbar-container {
+  width: 100%;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0px 0px;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+}
+
+.navbar-logo {
+  width: 120px;
 }
 
 .logo-links-container {
@@ -45,7 +53,6 @@
 }
 
 .navbar-btns button {
-  margin-left: 10px;
   padding: 12px 40px;
   border-radius: 10px;
   border: none;
@@ -70,25 +77,33 @@
   background: var(--primary-color-2-light);
 }
 
+@media only screen and (max-width: 950px) {
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .navbar-btns button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .desktop-navbar-links ul li a {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .navbar-logo {
+    width: 80px;
+  }
+
   .desktop-navbar-links {
     display: none;
   }
 
-  .navbar-btns button {
-    margin-left: 0px;
-    padding: 10px 30px;
-    border-radius: 10px;
-  }
-
   .signup-btn {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-  }
-
-  .logo img {
-    width: 100%;
-    contain: cover;
   }
 
   .mobile-navbar-links {

@@ -1,34 +1,29 @@
-body
-{
-    margin: 0%;
-    font-family: 'Nanum Gothic', sans-serif;
-
-}
-:root
-{
+:root {
     --helper-color: #1264fa;
     --white: #fff;
 }
+
 .text {
     width: 100%;
     margin-top: 40px;
-  }
-  .text1 {
+}
+
+.text1 {
     font-family: "Nunito Sans", sans-serif;
-    font-size:40px;
+    font-size: 40px;
     font-weight: bold;
     color: rgb(47, 47, 167);
     margin-left: 50px;
-  }
-h1
-{
+}
+
+h1 {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
-.container3
-{
+
+.container3 {
     display: grid;
     column-gap: 20px;
     width: 100%;
@@ -36,26 +31,26 @@ h1
     margin-top: 40px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.con1
-{
+
+.con1 {
     width: 90%;
     background-size: cover;
     height: 320px;
     overflow: hidden;
     border-radius: 5px;
     padding: 14px 16px;
-    box-shadow: 0px 8px 10px rgb(192,186,186);
+    box-shadow: 0px 8px 10px rgb(192, 186, 186);
 }
-#text1
-{
+
+#text1 {
     font-family: 'Nunito Sans', 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.375;
     color: #0081ff;
 }
-#text2
-{
+
+#text2 {
     font-size: 13px;
     font-weight: 600;
     margin-top: 5px;
@@ -67,15 +62,15 @@ h1
     white-space: nowrap;
     letter-spacing: .5px
 }
-.tool_head
-{
+
+.tool_head {
     position: relative;
     display: flex;
     align-items: flex-start;
     margin-bottom: 50px;
 }
-  .tool_icon
-{
+
+.tool_icon {
     height: 90px;
     width: 90px;
     margin: 3px 4px;
@@ -85,11 +80,12 @@ h1
     flex-shrink: 0;
     color: #0081ff;
 }
-.fa-solid{
+
+.fa-solid {
     font-size: 50px;
 }
-.tool_head_text
-{
+
+.tool_head_text {
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,10 +96,10 @@ h1
     height: 70px;
     margin-top: 10px;
     text-decoration: none;
-    
+
 }
-.tool_body
-{
+
+.tool_body {
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
@@ -113,32 +109,33 @@ h1
     color: #646464;
     max-height: 250px;
 }
-.con2
-{
+
+.con2 {
     background-size: cover;
-    position:static;
+    position: static;
     width: 100%;
     height: 300px;
 
 }
-.con3
-{
+
+.con3 {
     background-size: cover;
-    position:static;
+    position: static;
     width: 100%;
     height: 300px;
 }
-.con4
-{
+
+.con4 {
     background-size: cover;
-    position:static;
+    position: static;
     width: 100%;
     height: 300px;
 }
-.con4:hover
-{
+
+.con4:hover {
     cursor: pointer;
 }
+
 .button1:hover {
     cursor: pointer;
     background-color: var(--helper-color);
