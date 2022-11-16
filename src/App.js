@@ -11,6 +11,7 @@ const App = () => {
     <Login />,
     <Signup />,
     <Dashboard />,
+    <Blackbox/>,
     <BrowserRouter>
       <Routes>
         <Route>

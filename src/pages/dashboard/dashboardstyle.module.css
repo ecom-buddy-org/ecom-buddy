@@ -1,0 +1,150 @@
+:root {
+    --helper-color: #1264fa;
+    --white: #fff;
+}
+body
+{
+    background-color: #f1f3f6;
+}
+.text {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.text1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(46, 46, 53);
+    margin-left: 50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.container3 {
+    display: grid;
+    column-gap: 50px;
+    width: 100%;
+    row-gap: 30px;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.con1 {
+    width: 90%;
+    background-size: cover;
+    background-color: #fff;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 14px 16px;
+    z-index: 2;
+    box-shadow: 0px 8px 10px rgb(192, 186, 186);
+}
+
+#text1 {
+    font-family: 'Nunito Sans', 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.375;
+    color: #ffffff;
+}
+
+.text2 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #646464;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    letter-spacing: .5px
+}
+
+.tool_head {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.tool_icon {
+    height: 70px;
+    width: 90px;
+    margin: 3px 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #0081ff;
+}
+
+.fa-solid {
+    font-size: 200px;
+}
+
+.tool_head_text {
+    max-width: 100%;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0%;
+    overflow: hidden;
+    color: rgb(39, 35, 35);
+    height: 70px;
+    margin-top: 2px;
+    text-decoration: none;
+
+}
+
+.tool_body {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .5px;
+    line-height: 18px;
+    color: #646464;
+    max-height: 250px;
+}
+
+.con2 {
+    background-size: cover;
+    position: static;
+    width: 100%;
+    height: 300px;
+
+}
+
+.con3 {
+    background-size: cover;
+    position: static;
+    width: 100%;
+    height: 300px;
+}
+
+.con4 {
+    background-size: cover;
+    position: static;
+    width: 100%;
+    height: 300px;
+}
+
+.con4:hover {
+    cursor: pointer;
+}
+
+.button1:hover {
+    cursor: pointer;
+    background-color: var(--helper-color);
+    color: var(--white);
+}
