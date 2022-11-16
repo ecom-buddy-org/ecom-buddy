@@ -1,9 +1,10 @@
+body {
+    padding: 0px 40px 32px;
+}
+
 .main_form {
-    width: 100%;
-    height: max-content;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .heading1 {
@@ -11,7 +12,6 @@
     font-style: normal;
     letter-spacing: normal;
     margin: 0px 0px -8px;
-    margin-left: 5px;
     padding: 0px;
     text-transform: none;
     font-size: 18px;
@@ -20,43 +20,21 @@
     font-weight: 700;
 }
 
+h2 {
+    margin: 0px;
+}
+
 .Subheading1 {
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     margin: 0px;
-    margin-left: 8px;
     padding: 0px;
     text-transform: none;
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
     color: rgb(72, 94, 117);
-}
-
-.cPjDGa {
-    color: rgb(72, 94, 117);
-    font-size: 16px;
-    width: 16px;
-    height: 16px;
-}
-
-.Product {
-    width: 30%;
-    height: fit-content;
-    margin-left: 8px;
-}
-
-.textarea1 {
-    position: relative;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    gap: 4px;
 }
 
 .h2 {
@@ -89,18 +67,6 @@
     width: 60%;
 }
 
-.line1 {
-    height: 1px;
-    background-color: rgb(166, 170, 173);
-    width: 100%;
-}
-
-.select {
-    width: 400px;
-    height: 50px;
-    border-radius: 5px;
-}
-
 .Min {
     background: none;
     height: 100%;
@@ -120,12 +86,11 @@
 .Max {
     background: none;
     height: 100%;
-    width: 60%;
+    width: 100%;
     display: block;
-    padding: 0px;
+    padding: 0px 15px;
     font: inherit;
     min-height: 32px;
-    margin-left: 10px;
     font-size: 16px;
     line-height: 24px;
     color: rgb(43, 57, 72);
@@ -154,51 +119,64 @@
     border: 1px solid rgb(103, 132, 162);
 }
 
-.Competitors {
+.div_30 {
     width: 30%;
     height: fit-content;
     margin-left: 30px;
     margin-right: 30px;
-
-}
-
-.Sales {
-    width: 30%;
-    height: fit-content;
-    margin-left: 8px;
-}
-
-.top_head {
-    margin-left: 30px;
 }
 
 .head1 {
-    font-family: 'Bebas Neue';
-    font-size: 50px;
-    margin: 0%;
-    color: rgb(19, 18, 18);
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    padding: 0px;
+    text-transform: none;
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(19, 25, 31);
+    font-weight: 800;
+    margin: 4px 0px 0px;
 }
 
 .head2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-bottom: 0%;
-    margin-top: 0%;
-    font-size: 20px;
-    color: rgb(95, 90, 90);
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    padding: 0px;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(72, 94, 117);
+    margin: 4px 0px 0px;
+}
+
+.card {
+    margin-top: 24px;
+    border: 1px solid rgb(217, 224, 232);
+    border-radius: 6px;
+    padding: 24px;
 }
 
 .sub_head {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(29, 27, 27);
-    margin-left: 25px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(19, 25, 31);
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 .select {
-    width: 250px;
-    height: 35px;
-    border-radius: 7px;
+    height: 32px;
+    border-radius: 6px;
+    padding: 0px 12px;
 }
 
 .btn1 {
@@ -219,8 +197,8 @@
 }
 
 .btn2 {
-    background-color: var(--helper-color);
-    border: 1px solid var(--helper-color);
+    background: var(--primary-color-2);
+    border: 1px solid var(--primary-color-2);
     color: var(--white);
     width: 80px;
     height: 40px;
@@ -233,25 +211,9 @@
     border-radius: 8px;
 }
 
-.btn2:hover,
-.btn2:active {
-    background-color: var(--white);
-    color: var(--helper-color);
-}
-
-.btn1:hover,
-.btn1:active {
-    background-color: var(--white);
-    color: var(--helper-color);
-}
-
-:root {
-    --primary-color: #000839;
-    --primary-shades: #00020b;
-    --para-color: #80849c;
-    --helper-color: #0081ff;
-    --white: #fff;
-    --bg-color: #e6e6eb;
+.button button:hover,
+.button button:active {
+    background: var(--primary-color-2-light);
 }
 
 .button {
