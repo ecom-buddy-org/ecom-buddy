@@ -4,6 +4,7 @@ import Signup from './pages/authentication/Signup/Signup'
 import Homepage from './pages/landing_page/Homepage'
 import Dashboard from './pages/dashboard/Dashboard'
 import Blackbox from './pages/dashboard/blackbox/blackbox'
+import Product from './pages/Fillters/Product'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
     <Login />,
     <Signup />,
     <Dashboard />,
-    <Blackbox/>,
+    <Product/>,
     <BrowserRouter>
       <Routes>
         <Route>
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path='Signup' element={<Signup />} />
           <Route exact path='Dashboard' element={<Dashboard />} />
           <Route exact path='Blackbox' element={<Blackbox />} />
+          <Route exact path='Product' element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter>
