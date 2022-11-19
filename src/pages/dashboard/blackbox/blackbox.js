@@ -1,11 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AlertDialog from '../../../Component/AlertDialog';
 import Navbar from '../../../Component/navbar/Navbar'
 import Style from "./blackbox.module.css"
+import { useNavigate } from "react-router-dom";
 
-function Blackbox() {
+export default function Blackbox() {
+    const navigate = useNavigate();
+
+    const [domain, setDomain] = useState("www.amazon.com");
+    const [url, setURL] = useState("");
+    const [asin, setAsin] = useState("");
+    const [pages, setPages] = useState("");
+
+    const [dialogDescription, setDialogDescription] = useState("");
+
+    const [alertdialog, setAlertDialog] = useState(false);
+
+    const openDialog = () => {
+        setAlertDialog(true);
+    };
+
+    const closeDialog = () => {
+        setAlertDialog(false);
+    };
+
+    const handleDomainChange = (event) => {
+        setDomain(event.target.value);
+    };
+
+    const updateUrlField = (event) => {
+        setURL(event.target.value)
+    };
+
+    const updateASINField = (event) => {
+        setAsin(event.target.value)
+    };
+
+    const updatePagesField = (event) => {
+        setPages(event.target.value)
+    };
+
     return (
         <>
             <Navbar />
+            <AlertDialog
+                description={dialogDescription}
+                open={alertdialog}
+                onClose={closeDialog} />
             <div>
                 <p className={Style.head1}>Black Box</p>
                 <p className={Style.head2}>
@@ -17,7 +58,9 @@ function Blackbox() {
                 <div className={Style.sub_head}>
                     <p>
                         Find products on
-                        <select name="subject" className={Style.select}>
+                        <select value={domain} onChange={handleDomainChange}
+                            name="subject"
+                            className={Style.select}>
                             <option className={Style.option} value="">www.amazon.com</option>
                             <option className={Style.option}>www.amazon.com</option>
                             <option className={Style.option}>www.amazon.ca</option>
@@ -30,33 +73,13 @@ function Blackbox() {
                 <div className={Style.main_form}>
                     <div className={Style.div_30}>
                         <div>
-                            <div className={Style.Subheading1}>
-                                Domain
-                            </div>
-                            <br />
-                            <div>
-                                <h2 className={Style.text}>
-                                    <select name="subject" id="subject" className={Style.select}>
-                                        <option value="">Select one or more categories & subcategories</option>
-                                        <option value="Appliances">Appliances</option>
-                                        <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
-                                        <option value="Automotive">Automotive</option>
-                                        <option value="Baby Products">Baby Products</option>
-                                        <option value="Beauty & Personal Care">Beauty & Personal Care</option>
-                                        <option value="Books">Books</option>
-                                    </select>
-                                </h2>
-                            </div>
-                        </div>
-                        <br /><br />
-                        <div>
                             <div className={Style.Min_Max}>
                                 <div className={Style.Subheading1}>
-                                    Best Seller Rank (BSR)
+                                    URL
                                 </div>
                                 <br />
                                 <div className={Style.Min_text}>
-                                    <input type="text" className={Style.Max} placeholder="Max" />
+                                    <input type="text" className={Style.Max} onChange={updateUrlField} placeholder="Provide URL *" />
                                 </div>
                             </div>
                         </div>
@@ -69,7 +92,7 @@ function Blackbox() {
                             </div>
                             <br />
                             <div className={Style.Min_text}>
-                                <input type="text" className={Style.Max} placeholder="ASIN" />
+                                <input type="text" className={Style.Max} onChange={updateASINField} placeholder="Provide ASIN *" />
                             </div>
                         </div>
                     </div>
@@ -81,17 +104,42 @@ function Blackbox() {
                             </div>
                             <br />
                             <div className={Style.Min_text}>
-                                <input type="text" className={Style.Max} placeholder="Max" />
+                                <input type="text" className={Style.Max} onChange={updatePagesField} placeholder="Enter pages *" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={Style.button}>
-                    <button type="submit" className={Style.btn2}>Submit</button>
+                    <button type="submit" className={Style.btn2} onClick={() => processSubmit()}>Submit</button>
                 </div>
             </div>
         </>
-    )
-}
+    );
 
-export default Blackbox
+    function processSubmit() {
+        console.log("Submit clicked:");
+        console.log(`Value from dropdown is: ${domain}`);
+        console.log('Your url value is: ' + url);
+        console.log('Your pages value is: ' + pages);
+        console.log('Your asin value is: ' + asin);
+        if (url === "") {
+            setDialogDescription("URL must not be empty. Fill the field and try again.Fields with * are all required");
+            openDialog();
+        } else if (asin === "") {
+            setDialogDescription("ASIN must not be empty. Fill the field and try again.Fields with * are all required");
+            openDialog();
+        } else if (pages === "") {
+            setDialogDescription("Pages must not be empty. Fill the field and try again.Fields with * are all required");
+            openDialog();
+        } else {
+            var data = {
+                domain: domain,
+                url: url,
+                asin: asin,
+                pages: pages
+            };
+
+            navigate('/Product', { state: data });
+        }
+    }
+}
