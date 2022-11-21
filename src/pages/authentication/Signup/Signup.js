@@ -1,7 +1,7 @@
 import React from 'react'
 import SignupStyle from "./signupstyle.module.css"
 import Img3 from '../../../Images/Signup_image.png'
-import EcomBuddyLogo from '../../../Images/Logo.jpg'
+import EcomBuddyLogo from '../../../Images/Logo.png'
 export default function Signup() {
   return (
     <section className={SignupStyle.main_section}>

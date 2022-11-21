@@ -3,7 +3,7 @@ import "./Navbar.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Logo from '../../Images/Logo.jpg'
+import Logo from '../../Images/Logo.png'
 import { useNavigate } from "react-router-dom";
 
 function ElevationScroll(props) {
@@ -49,13 +49,13 @@ const Navbar = (props) => {
                   <div className="desktop-navbar-links">
                     <ul>
                       <li>
-                        <a href="#home">Home</a>
+                        <p onClick={() => navigateTo("dashboard")}>Dashboard</p>
                       </li>
                       <li>
-                        <a href="#black_box">Black box</a>
+                        <p onClick={() => navigateTo("blackbox")}>Black box</p>
                       </li>
                       <li>
-                        <a href="#product_listing">Product Listing</a>
+                        <p onClick={() => navigateTo("product")}>Product Listing</p>
                       </li>
                       <li>
                         <a href="#contact_us">Contact Us</a>
@@ -71,13 +71,13 @@ const Navbar = (props) => {
               <div className="mobile-navbar-links">
                 <ul>
                   <li>
-                    <a href="#home">Home</a>
+                    <p onClick={() => navigateTo("dashboard")}>Dashboard</p>
                   </li>
                   <li>
-                    <a href="#black_box">Black box</a>
+                    <p onClick={() => navigateTo("blackbox")}>Black box</p>
                   </li>
                   <li>
-                    <a href="#product_listing">Product Listing</a>
+                    <p href="#product_listing" onClick={() => navigateTo("product")}>Product Listing</p>
                   </li>
                   <li>
                     <a href="#contact_us">Contact Us</a>
