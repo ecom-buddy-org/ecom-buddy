@@ -5,12 +5,16 @@ import Homepage from './pages/landing_page/Homepage'
 import Dashboard from './pages/dashboard/Dashboard'
 import Blackbox from './pages/dashboard/blackbox/blackbox'
 import Product from './pages/Fillters/Product'
+import User from './pages/authentication/User_Profile/User'
+import Main_profile from './pages/authentication/User_Profile/Main_profile'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <Homepage />,
     <Login />,
     <Signup />,
+    <User/>,
+    <Main_profile/>,
     <Dashboard />,
     <Product/>,
     <BrowserRouter>
@@ -22,6 +26,8 @@ const App = () => {
           <Route exact path='Dashboard' element={<Dashboard />} />
           <Route exact path='Blackbox' element={<Blackbox />} />
           <Route exact path='Product' element={<Product />} />
+          <Route exact path='User' element={<User />} />
+          <Route exact path='Mainprofile' element={<Main_profile />} />
         </Route>
       </Routes>
     </BrowserRouter>

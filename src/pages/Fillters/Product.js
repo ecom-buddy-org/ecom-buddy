@@ -19,7 +19,6 @@ function Product() {
     ratings_total: ""
   });
   const { state } = useLocation();
-  // console.log(state);
 
   React.useEffect(() => {
     axios.get('https://api.rainforestapi.com/request?api_key=demo&amazon_domain=amazon.com&type=product&asin=B073JYC4XM').then(({ data }) =>
@@ -32,7 +31,8 @@ function Product() {
         price: data.newer_model.price.value,
         manufacturer: data.product.manufacturer,
         rating: data.product.rating,
-        ratings_total: data.product.ratings_total
+        ratings_total: data.product.ratings_total,
+        model:data.product.model_number
       })
     );
   }, []); // <-- Have to pass in [] here!
