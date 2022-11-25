@@ -8,6 +8,7 @@ import Product from './pages/Fillters/Product'
 import User from './pages/authentication/User_Profile/User'
 import Main_profile from './pages/authentication/User_Profile/Main_profile'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SideBarLayout from './Component/Layout/SideBarLayout'
 const App = () => {
   return (
     <Homepage />,
@@ -18,17 +19,19 @@ const App = () => {
     <Dashboard />,
     <Product/>,
     <BrowserRouter>
-      <Routes>
-        <Route>
+        <Routes>
+          <Route>
           <Route exact path='/' element={<Homepage />} />
-          <Route exact path='Login' element={<Login />} />
-          <Route exact path='Signup' element={<Signup />} />
-          <Route exact path='Dashboard' element={<Dashboard />} />
-          <Route exact path='Blackbox' element={<Blackbox />} />
-          <Route exact path='Product' element={<Product />} />
-          <Route exact path='User' element={<User />} />
-          <Route exact path='Mainprofile' element={<Main_profile />} />
-        </Route>
+          <Route exact path='login' element={<Login />} />
+            <Route exact path='signup' element={<Signup />} />
+            <Route path='/' element={<SideBarLayout />}>
+              <Route exact path='dashboard' element={<Dashboard />} />
+              <Route exact path='blackbox' element={<Blackbox />} />
+              <Route exact path='product' element={<Product />} />
+              <Route exact path='user' element={<User />} />
+              <Route exact path='mainprofile' element={<Main_profile />} />
+            </Route>
+          </Route>
       </Routes>
     </BrowserRouter>
   )

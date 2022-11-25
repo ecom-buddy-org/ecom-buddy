@@ -19,3 +19,7 @@ body {
     padding: 0;
     background: #fff;
 }
+
+a {
+    text-decoration: none;
+}

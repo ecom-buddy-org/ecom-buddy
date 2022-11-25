@@ -1,23 +1,25 @@
-body
-{
+body {
     font-family: 'Nunito Sans', sans-serif;
 }
-.sub_userprofile{
+
+.sub_userprofile {
     width: 80%;
     height: 600px;
-    border-radius:8px;
+    border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     background-image: url('background.jpg');
-    background-size:cover;
+    background-size: cover;
 }
-.main_userprofile{
-   display: flex;
-   justify-content: center;
+
+.main_userprofile {
+    display: flex;
+    justify-content: center;
 }
-.sub_box{
+
+.sub_box {
     width: 60%;
     height: 340px;
     box-shadow: 0 3px 10px rgb(5, 5, 5);
@@ -26,31 +28,31 @@ body
     background-color: white;
     z-index: 1000;
 }
-img
-{
+
+img {
     font-size: 10px;
 }
-.para1
-{
+
+.para1 {
     font-size: 30px;
     font-weight: 500;
     color: #1C8090;
 }
-.para2
-{
+
+.para2 {
     font-size: 20px;
 }
-.Image
-{
+
+.Image {
     height: 100px;
     width: 100px;
 }
-.Back
-{
+
+.Back {
     text-decoration: none;
     color: #1C8090;
 }
-.Image2
-{
+
+.Image2 {
     z-index: 900;
 }
