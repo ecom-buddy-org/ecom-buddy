@@ -42,7 +42,6 @@ export default function Blackbox() {
 
     return (
         <>
-            <Navbar />
             <AlertDialog
                 description={dialogDescription}
                 open={alertdialog}

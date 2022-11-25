@@ -1,6 +1,11 @@
 import React from 'react'
 import Profilestyle from "./profile.module.css"
+<<<<<<< HEAD
 import icon from '../../../Images/iconprofile.png'
+=======
+import Img1 from '../../../Images/iconprofile.png'
+
+>>>>>>> 6d1c1c3dd6ff609cd9375f28a96bf5451f71acda
 function Main_profile() {
   return (
     <>

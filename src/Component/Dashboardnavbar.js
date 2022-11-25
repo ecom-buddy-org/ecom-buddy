@@ -5,7 +5,6 @@ function Dashboardnavbar() {
         <>
 <header class="top-nav">
       <img id="logo" src="Logo.jpg" />
-      
         <div class="nav-button-bars">
       
           <i id="resp-searchicon" class="fa fa-search" aria-hidden="true"></i>
