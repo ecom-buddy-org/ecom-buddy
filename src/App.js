@@ -7,6 +7,7 @@ import Blackbox from './pages/dashboard/blackbox/blackbox'
 import Product from './pages/Fillters/Product'
 import User from './pages/authentication/User_Profile/User'
 import Main_profile from './pages/authentication/User_Profile/Main_profile'
+import Login_confirmation from './pages/authentication/login_confirm/Login_confirmation'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
     <Main_profile/>,
     <Dashboard />,
     <Product/>,
+    <Login_confirmation/>,
     <BrowserRouter>
       <Routes>
         <Route>
@@ -28,6 +30,7 @@ const App = () => {
           <Route exact path='Product' element={<Product />} />
           <Route exact path='User' element={<User />} />
           <Route exact path='Mainprofile' element={<Main_profile />} />
+          <Route exact path='loginconfirm' element={<Login_confirmation />} />
         </Route>
       </Routes>
     </BrowserRouter>
