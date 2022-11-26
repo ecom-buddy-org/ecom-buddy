@@ -12,36 +12,31 @@ function Sidebar() {
     const history = useNavigate();
 
     const { sidebarMain, sidebarLogo, menuItem, menus, header, hamburgerToggle, activeMenu, hidden, collapsed } = style;
-    const [activeMenuItem, setActiveMenuItem] = useState(1);
     const [isHamburgerActive, setisHamburgetActive] = useState(false);
     const [sidebarMenus, setSidebarMenu] = useState([
         {
             id: 1,
             name: "Dashboard",
             route: "/dashboard",
-            icon: <Dashboard />,
-            isActive: activeMenuItem === 1
+            icon: <Dashboard />
         },
         {
             id: 2,
             name: "Blackbox",
             route: "/blackbox",
-            icon: <Inventory />,
-            isActive: activeMenuItem === 2
+            icon: <Inventory />
         },
         {
             id: 3,
             name: "Profile",
             route: "/mainprofile",
-            icon: <ProfileIcon />,
-            isActive: activeMenuItem === 3
+            icon: <ProfileIcon />
         },
         {
             id: 4,
             name: "Logout",
             route: "/logout",
-            icon: <LogoutIcon />,
-            isActive: activeMenuItem === 4
+            icon: <LogoutIcon />
         }
     ]);
     function navigateTo(route) {
