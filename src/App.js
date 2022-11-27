@@ -2,11 +2,11 @@ import React from "react";
 import Login from "./pages/authentication/Login/Login";
 import Signup from "./pages/authentication/Signup/Signup";
 import ForgetPassword from "./pages/authentication/forgetPassword/ForgetPassword";
-import Homepage from "./pages/landing_page/Homepage";
+import Homepage from "./pages/landing/Homepage";
 import Dashboard from "./pages/dashboard/Dashboard";
-import Blackbox from "./pages/dashboard/blackbox/blackbox";
-import Product from "./pages/Fillters/Product";
-import Profile from "./pages/authentication/User_Profile/Main_profile";
+import Blackbox from "./pages/dashboard/blackbox/Blackbox";
+import Product from "./pages/filters/Product";
+import Profile from "./pages/dashboard/profile/Profile";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBarLayout from "./Component/Layout/SideBarLayout";
 
