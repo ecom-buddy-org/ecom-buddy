@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ecom-buddy/static/css/main.d157da55.css",
+    "main.js": "/ecom-buddy/static/js/main.54752c75.js",
+    "static/media/forgetPassIllus.jpg": "/ecom-buddy/static/media/forgetPassIllus.d4e4ae57aa25040b8d6f.jpg",
+    "static/media/12.jpg": "/ecom-buddy/static/media/12.eae43ea49042eecf7864.jpg",
+    "static/media/Home_title_image.jpeg": "/ecom-buddy/static/media/Home_title_image.05bbf73e0a090e4fb262.jpeg",
+    "static/media/Section2_Ecombuddy.png": "/ecom-buddy/static/media/Section2_Ecombuddy.263b7499eaa3c6b02585.png",
+    "static/media/landing_section_3.svg": "/ecom-buddy/static/media/landing_section_3.bfe845382b13e42bfb39d826b95bec67.svg",
+    "static/media/Signup_image.png": "/ecom-buddy/static/media/Signup_image.a2996166653e02a8f246.png",
+    "static/media/forgetBG.png": "/ecom-buddy/static/media/forgetBG.c5c06844eab8a543231c.png",
+    "index.html": "/ecom-buddy/index.html",
+    "main.d157da55.css.map": "/ecom-buddy/static/css/main.d157da55.css.map",
+    "main.54752c75.js.map": "/ecom-buddy/static/js/main.54752c75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d157da55.css",
+    "static/js/main.54752c75.js"
+  ]
+}
