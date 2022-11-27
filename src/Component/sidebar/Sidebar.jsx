@@ -29,7 +29,7 @@ function Sidebar() {
         {
             id: 3,
             name: "Profile",
-            route: "/mainprofile",
+            route: "/profile",
             icon: <ProfileIcon />
         },
         {

@@ -1,12 +1,16 @@
-import React from 'react'
-import SignupStyle from "./signupstyle.module.css"
-import Img3 from '../../../Images/Signup_image.png'
-import EcomBuddyLogo from '../../../Images/Logo.png'
+import React from "react";
+import SignupStyle from "./signupstyle.module.css";
+import Img3 from "../../../Images/Signup_image.png";
+import EcomBuddyLogo from "../../../Images/Logo.png";
+import { Link } from "react-router-dom";
+
 export default function Signup() {
   return (
     <section className={SignupStyle.main_section}>
       <div className={SignupStyle.section1}>
-        <div className={SignupStyle.top_image}><img src={EcomBuddyLogo} alt="" /></div>
+        <div className={SignupStyle.top_image}>
+          <img src={EcomBuddyLogo} alt="" />
+        </div>
         <h2 className={SignupStyle.loginheading}>Sign Up to EcomBuddy</h2>
         <div className={SignupStyle.main_form}>
           <div className={SignupStyle.logintextfield}>
@@ -55,19 +59,29 @@ export default function Signup() {
                   id="flexCheckChecked"
                   checked
                 />
-                <label className={SignupStyle.form_check_label} for="flexCheckChecked">
+                <label
+                  className={SignupStyle.form_check_label}
+                  for="flexCheckChecked"
+                >
                   I agree with the <a href="#">Privacy policy</a> and
                   <a href="#"> Terms and conditions</a>
                 </label>
               </div>
             </div>
           </div>
-          <button id="button" type="button" className={`${SignupStyle.btn_primary}`}>
+          <button
+            id="button"
+            type="button"
+            className={`${SignupStyle.btn_primary}`}
+          >
             Sign up
           </button>
           <div className={SignupStyle.bottom_text}>
             <p className={SignupStyle.bottom_para}>
-              Already have an account? <a className={SignupStyle.bottom_link} href="">Login</a>
+              Already have an account?{" "}
+              <Link className={SignupStyle.bottom_link} to="/login">
+                Login
+              </Link>
             </p>
           </div>
         </div>
@@ -91,6 +105,6 @@ export default function Signup() {
           <p className={SignupStyle.section2_para2}>Michael Mosely</p>
         </div>
       </div>
-    </section >
-  )
+    </section>
+  );
 }

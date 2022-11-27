@@ -136,3 +136,7 @@
     padding: 0px;
   }
 }
+
+ul li p {
+  cursor: pointer;
+}
